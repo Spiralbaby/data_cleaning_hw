@@ -4,8 +4,7 @@ library(reshape2)
 
 #please see README.md for more details instructions on set up.
 #fork, and clone "data_cleaning_hw" repo locally from github (full GitHub link in Coursera assigment submission)
-#download and unzip Dataset.zip to "data_cleaning_hw" repo root directory 
-#(make sure: "UCI HAR Dataset" folder is in the "data_cleaning_hw" directory)
+#download and unzip Dataset.zip to repo root directory ("UCI HAR Dataset" should be in forked repo root directory)
 #link to download dataset: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 #read x, y test and x, y train files into data frames
@@ -35,12 +34,10 @@ any(is.na(x_train)) #result was FALSE - No NA values
 any(is.na(test_subjects)) #result was FALSE - No NA values
 any(is.na(train_subjects)) #result was FALSE - No NA values
 
-
 #filter out only columns needed (mean and std) 
 requiredColumns <- features[,1]
 required_x_test <- x_test[,requiredColumns]
 required_x_train <- x_train[,requiredColumns]
-
 
 #combine y and x data for test and train to associate activity names with data 
 yx_test <- cbind(y_test,required_x_test)
@@ -48,14 +45,12 @@ yx_train <- cbind(y_train,required_x_train)
 #combine test and train data
 combined_test_train <- rbind(yx_test, yx_train)
 
-
 colNamesSubAct <- c("subjects","activity")
 colNamesVariables <- as.character(features[,2])
 #combine into 1 vector of column names
 colNames <- c(colNamesSubAct, colNamesVariables)
 
-
-# #combine test and subjets
+#combine test and subjets
 all_subjects <- rbind(test_subjects,train_subjects)
 
 #combine test_train with all_subjects to make master "raw" data frame
@@ -72,7 +67,7 @@ master_raw_data <- select(master_raw_data, -actNum)
 
 
 
-##creates new tidy data set of "mean" values for each subject per activity 
+####creates new tidy data set of "mean" values for each subject per activity 
 meltedRawData <- melt(master_raw_data,id=c("activity_name","subjects"),measure.vars=c(3:68))
 meanMasterData <- ddply(meltedRawData, c("activity_name","subjects","variable"), summarise, mean=mean(value))
 
