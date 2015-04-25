@@ -10,7 +10,7 @@ Below is a list of steps, variable definitions, and descriptions of modification
   * features - contains data from features.txt 
   * activities - contains data from activity_labels.txt
 
-2. filter "features" to those containing "mean()" or "std()" using the filter method, and grepl 
+2. filter "features" to those containing "mean()" or "std()" using the filter method, and grepl
 3. name the activities table for easier handling
 4. perform checks for any empty variables (NA values) in our data using: any(is.na("data"))
 5. merge all the data sets using cbind, rbind and merge to create one master data set
