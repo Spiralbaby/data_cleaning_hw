@@ -2,7 +2,7 @@
 
 ###Purpose:
 
-####This project creates a tidy data set created from raw data of accelerometers from the Samsung Galaxy S smartphone.
+#####This project creates a tidy data set created from raw data of accelerometers from the Samsung Galaxy S smartphone.
 
 ###Files included this repo:
 
