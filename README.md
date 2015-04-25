@@ -1,8 +1,8 @@
-##Homework Assignment for Coursera Data Science Class
+##Getting and Cleaning Data Homework Assignment
 
 ###Purpose:
 
-####This project creates a tidy data set created from raw data of accelerometers from the Samsung Galaxy S smartphone. It is a homework assigment for "Getting and Cleaning Data" class offered through coursera. In this class we are demonstrating the use of R to get and clean data.
+####This project creates a tidy data set created from raw data of accelerometers from the Samsung Galaxy S smartphone.
 
 ###Files included this repo:
 
@@ -15,6 +15,6 @@
 
 ####Steps to recreate Tidy data set:
 1. fork this repo, and clone it locally on your machine. 
-2. download "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" and unzip it to the repos directory.
-* there should be 2 folders: "test" and "train" each containing the raw data used in the analysis, as well as it's own README.txt file that describes the contents of the unzipped file.
-3. you can run the code from run_analysis.R by sourcing it through R studio, or copying, pasting and running the code directly through the R terminal. the end result will be the tidy data set provided in the peer review section of the "Getting and Cleaning Data" Coursera class.
+2. download "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" and unzip it to this cloned repo's directory.
+the unzipped file contains 2 folders: "test" and "train" each containing the raw data used in the analysis, as well as it's own README.txt file that describes the contents of the unzipped file.
+3. you can run the code from run_analysis.R by sourcing it through R studio, or copying and running the code directly through the R terminal. the end result will be the tidy data set provided in the peer review section of the "Getting and Cleaning Data" Coursera class.
