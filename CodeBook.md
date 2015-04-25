@@ -12,11 +12,11 @@ Below is a list of steps, variable definitions, and descriptions of modification
 
 2. filter "features" to those containing "mean()" or "std()" using the filter method, and grepl.
 3. name the activities table for easier handling
-4. perform checks for any empty variables (NA values) in our data using: any(is.na("data")) - there did not appear to be any.
-5. merge all the data sets using cbind and rbind and merge to create one master data set
+4. perform checks for any empty variables (NA values) in our data using: any(is.na("data"))
+5. merge all the data sets using cbind, rbind and merge to create one master data set
 6. name variables in data set
-7. create tidy data set from master data set using melt function, and ddply and summarise.
-8. use write.table to create output for submitting to class
+7. create tidy data set from master data set using melt function, ddply and summarise.
+8. use write.table using row.name=FALSE to create output for submitting to class
 
 ###Data Frame: "master_raw_data"
 * 10299 observations of 68 variables. 
