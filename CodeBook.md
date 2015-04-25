@@ -18,10 +18,11 @@ Below is a list of steps, variable definitions, and descriptions of modification
 7. create tidy data set from master data set using melt function, ddply and summarise.
 8. use write.table using row.name=FALSE to create output for submitting to class
 
-###Data Frame: "master_raw_data"
-* 10299 observations of 68 variables. 
-* produced by step 4 of the assignment & used to create final tidy data set in the final step.
-#####Variable names:
+####Data Frame: "master_raw_data"
+10299 observations of 68 variables. 
+produced by step 4 of the assignment & used to create final tidy data set in the final step.
+
+######Variable names:
 * activity_name - 6 activites: "WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING,"LAYING"
 * subjects - (an integer vector from 1 - 30 that refers to subjects names (mapped from raw data))
 * tBodyAcc-mean()-X           
@@ -91,10 +92,11 @@ Below is a list of steps, variable definitions, and descriptions of modification
 * fBodyBodyGyroJerkMag-mean() 
 * fBodyBodyGyroJerkMag-std() 
 
-###Data Frame: "meanMasterData"
-* 11880 observations of 4 variables. 
-* the final tidy data set created from master_raw_data, and provided as the answer to step 5 of the homework.
-#####Variable names:
+####Data Frame: "meanMasterData"
+11880 observations of 4 variables. 
+the final tidy data set created from master_raw_data, and provided as the answer to step 5 of the homework.
+
+######Variable names:
 * activity_name - 6 activities "WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING,"LAYING"
 * subjects - (an integer vector from 1 - 30 that refers to subjects names (mapped from raw data))
 * variable - the 66 variables (listed above) from the master_raw_data for which we are finding the mean.
