@@ -20,7 +20,8 @@ Below is a list of steps, variable definitions, and descriptions of modification
 
 ####Data Frame: "master_raw_data"
 10299 observations of 68 variables. 
-produced by step 4 of the assignment & used to create final tidy data set in the final step.
+
+produced from steps 1-4 of the assignment & used to create final tidy data set.
 
 ######Variable names:
 * activity_name - 6 activites: "WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING,"LAYING"
@@ -104,4 +105,4 @@ the final tidy data set created from master_raw_data, and provided as the answer
 
 the mean values are averages of vector data produced by the accelerometer and gyroscope of the Samsung device.
 
-* code is well commented for further details and clarity.
+code is commented for further details and clarity.
