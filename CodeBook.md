@@ -1,6 +1,6 @@
-###Below is a list of steps, variable definitions, and descriptions of modifications to the raw data, performed to create the tidy data set submitted as part of the Coursera assignment.
+Below is a list of steps, variable definitions, and descriptions of modifications to the raw data, performed to create the tidy data set submitted as part of the Coursera assignment.
 
-1. creates the following variables, and read in raw data.
+1. create the following variables, and read in raw data.
   * y_test - contains data from y_test.txt
   * x_test - contains data from X_test.txt 
   * y_train - contains data from y_train.txt
