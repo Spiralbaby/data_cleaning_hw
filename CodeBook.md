@@ -1,14 +1,14 @@
 ###Below is a list of steps, variable definitions, and descriptions of modifications to the raw data, performed to create the tidy data set submitted as part of the Coursera assignment.
 
 1. creates the following variables, and read in raw data.
-* y_test - contains data from y_test.txt
-* x_test - contains data from X_test.txt 
-* y_train - contains data from y_train.txt
-* x_train - contains data from X_train.txt
-* test_subjects - contains data subject_test.txt
-* train_subjects - contains data from subject_train.txt 
-* features - contains data from features.txt 
-* activities - contains data from activity_labels.txt
+  * y_test - contains data from y_test.txt
+  * x_test - contains data from X_test.txt 
+  * y_train - contains data from y_train.txt
+  * x_train - contains data from X_train.txt
+  * test_subjects - contains data subject_test.txt
+  * train_subjects - contains data from subject_train.txt 
+  * features - contains data from features.txt 
+  * activities - contains data from activity_labels.txt
 
 2. filter "features" to those containing "mean()" or "std()" using the filter method, and grepl.
 3. name the activities table for easier handling
