@@ -101,6 +101,7 @@ the final tidy data set created from master_raw_data, and provided as the answer
 * subjects - (an integer vector from 1 - 30 that refers to subjects names (mapped from raw data))
 * variable - the 66 variables (listed above) from the master_raw_data for which we are finding the mean.
 * mean - the mean values for the 66 variables
+
 the mean values are averages of vector data produced by the accelerometer and gyroscope of the Samsung device.
 
 * code is well commented for further details and clarity.
